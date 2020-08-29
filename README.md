@@ -18,3 +18,8 @@ ref: https://docs.mapbox.com/ios/maps/overview/#install-the-maps-sdk
 `./script/install` で依存ライブラリがインストールされる。
 MapBox系のエラーは公式がかなり網羅していそう→[Troubleshooting Mapbox Maps SDK for iOS installation](https://docs.mapbox.com/help/troubleshooting/ios-sdk-installation/)
 
+### Run
+
+Info.plistに `MGLMapboxAccessToken` としてtokenを追加する必要がある。
+
+ref: https://docs.mapbox.com/ios/maps/overview/#install-the-maps-sdk

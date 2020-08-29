@@ -16,6 +16,7 @@
 		7AA9D00824FA38E700606694 /* MapBoxSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9D00724FA38E700606694 /* MapBoxSampleTests.swift */; };
 		7AA9D01524FA448700606694 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA9D01324FA448700606694 /* Mapbox.framework */; };
 		7AA9D01724FA448700606694 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA9D01424FA448700606694 /* MapboxMobileEvents.framework */; };
+		7AA9D01C24FA46D400606694 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9D01B24FA46D400606694 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		7AA9D00924FA38E700606694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AA9D01324FA448700606694 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
 		7AA9D01424FA448700606694 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxMobileEvents.framework; path = Carthage/Build/iOS/MapboxMobileEvents.framework; sourceTree = "<group>"; };
+		7AA9D01B24FA46D400606694 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				7AA9CFF024FA38E500606694 /* AppDelegate.swift */,
 				7AA9CFF224FA38E500606694 /* SceneDelegate.swift */,
 				7AA9CFF424FA38E500606694 /* ContentView.swift */,
+				7AA9D01B24FA46D400606694 /* MapView.swift */,
 				7AA9CFF624FA38E600606694 /* Assets.xcassets */,
 				7AA9CFFB24FA38E600606694 /* LaunchScreen.storyboard */,
 				7AA9CFFE24FA38E600606694 /* Info.plist */,
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AA9CFF124FA38E500606694 /* AppDelegate.swift in Sources */,
+				7AA9D01C24FA46D400606694 /* MapView.swift in Sources */,
 				7AA9CFF324FA38E500606694 /* SceneDelegate.swift in Sources */,
 				7AA9CFF524FA38E500606694 /* ContentView.swift in Sources */,
 			);
