@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -eu
+
+carthage bootstrap --platform iOS --use-netrc --cache-builds

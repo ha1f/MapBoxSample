@@ -14,6 +14,8 @@
 		7AA9CFFA24FA38E600606694 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA9CFF924FA38E600606694 /* Preview Assets.xcassets */; };
 		7AA9CFFD24FA38E600606694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA9CFFB24FA38E600606694 /* LaunchScreen.storyboard */; };
 		7AA9D00824FA38E700606694 /* MapBoxSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9D00724FA38E700606694 /* MapBoxSampleTests.swift */; };
+		7AA9D01524FA448700606694 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA9D01324FA448700606694 /* Mapbox.framework */; };
+		7AA9D01724FA448700606694 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA9D01424FA448700606694 /* MapboxMobileEvents.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		7AA9D00324FA38E700606694 /* MapBoxSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapBoxSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA9D00724FA38E700606694 /* MapBoxSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxSampleTests.swift; sourceTree = "<group>"; };
 		7AA9D00924FA38E700606694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AA9D01324FA448700606694 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
+		7AA9D01424FA448700606694 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxMobileEvents.framework; path = Carthage/Build/iOS/MapboxMobileEvents.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA9D01724FA448700606694 /* MapboxMobileEvents.framework in Frameworks */,
+				7AA9D01524FA448700606694 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +70,7 @@
 				7AA9CFEF24FA38E500606694 /* MapBoxSample */,
 				7AA9D00624FA38E700606694 /* MapBoxSampleTests */,
 				7AA9CFEE24FA38E500606694 /* Products */,
+				7AA9D01224FA448700606694 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +114,15 @@
 			path = MapBoxSampleTests;
 			sourceTree = "<group>";
 		};
+		7AA9D01224FA448700606694 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AA9D01324FA448700606694 /* Mapbox.framework */,
+				7AA9D01424FA448700606694 /* MapboxMobileEvents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +133,7 @@
 				7AA9CFE924FA38E500606694 /* Sources */,
 				7AA9CFEA24FA38E500606694 /* Frameworks */,
 				7AA9CFEB24FA38E500606694 /* Resources */,
+				7AA9D01A24FA44CD00606694 /* Copy carthage frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,6 +219,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AA9D01A24FA44CD00606694 /* Copy carthage frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Mapbox.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MapboxMobileEvents.framework",
+			);
+			name = "Copy carthage frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Mapbox.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/MapboxMobileEvents.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AA9CFE924FA38E500606694 /* Sources */ = {
@@ -365,6 +407,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MapBoxSample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MapBoxSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -384,6 +430,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MapBoxSample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MapBoxSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
