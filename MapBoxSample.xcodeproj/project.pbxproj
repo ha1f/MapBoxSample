@@ -17,6 +17,11 @@
 		7AA9D01524FA448700606694 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA9D01324FA448700606694 /* Mapbox.framework */; };
 		7AA9D01724FA448700606694 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA9D01424FA448700606694 /* MapboxMobileEvents.framework */; };
 		7AA9D01C24FA46D400606694 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9D01B24FA46D400606694 /* MapView.swift */; };
+		7AA9D02124FB465100606694 /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9D02024FB465100606694 /* APIRequestProtocol.swift */; };
+		7AA9D02324FB466B00606694 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9D02224FB466B00606694 /* APIError.swift */; };
+		7AA9D02524FB468800606694 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9D02424FB468800606694 /* HTTPMethod.swift */; };
+		7AA9D02724FB46A400606694 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9D02624FB46A400606694 /* ApiClient.swift */; };
+		7AA9D02924FB496500606694 /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9D02824FB496500606694 /* HttpHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		7AA9D01324FA448700606694 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
 		7AA9D01424FA448700606694 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxMobileEvents.framework; path = Carthage/Build/iOS/MapboxMobileEvents.framework; sourceTree = "<group>"; };
 		7AA9D01B24FA46D400606694 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		7AA9D02024FB465100606694 /* APIRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestProtocol.swift; sourceTree = "<group>"; };
+		7AA9D02224FB466B00606694 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		7AA9D02424FB468800606694 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		7AA9D02624FB46A400606694 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		7AA9D02824FB496500606694 /* HttpHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +98,7 @@
 		7AA9CFEF24FA38E500606694 /* MapBoxSample */ = {
 			isa = PBXGroup;
 			children = (
+				7AA9D01F24FB464300606694 /* API */,
 				7AA9CFF024FA38E500606694 /* AppDelegate.swift */,
 				7AA9CFF224FA38E500606694 /* SceneDelegate.swift */,
 				7AA9CFF424FA38E500606694 /* HomeView.swift */,
@@ -124,6 +135,18 @@
 				7AA9D01424FA448700606694 /* MapboxMobileEvents.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AA9D01F24FB464300606694 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7AA9D02024FB465100606694 /* APIRequestProtocol.swift */,
+				7AA9D02224FB466B00606694 /* APIError.swift */,
+				7AA9D02424FB468800606694 /* HTTPMethod.swift */,
+				7AA9D02624FB46A400606694 /* ApiClient.swift */,
+				7AA9D02824FB496500606694 /* HttpHeader.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +277,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AA9CFF124FA38E500606694 /* AppDelegate.swift in Sources */,
+				7AA9D02724FB46A400606694 /* ApiClient.swift in Sources */,
 				7AA9D01C24FA46D400606694 /* MapView.swift in Sources */,
 				7AA9CFF324FA38E500606694 /* SceneDelegate.swift in Sources */,
+				7AA9D02524FB468800606694 /* HTTPMethod.swift in Sources */,
+				7AA9D02124FB465100606694 /* APIRequestProtocol.swift in Sources */,
+				7AA9D02924FB496500606694 /* HttpHeader.swift in Sources */,
 				7AA9CFF524FA38E500606694 /* HomeView.swift in Sources */,
+				7AA9D02324FB466B00606694 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
