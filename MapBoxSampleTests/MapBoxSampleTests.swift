@@ -2,7 +2,7 @@
 //  MapBoxSampleTests.swift
 //  MapBoxSampleTests
 //
-//  Created by Yamaguchi Tomoki on 2020/08/29.
+//  Created by ha1f on 2020/08/29.
 //  Copyright © 2020 ha1f. All rights reserved.
 //
 

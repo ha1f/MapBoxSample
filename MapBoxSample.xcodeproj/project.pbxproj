@@ -22,6 +22,9 @@
 		7AA9D02524FB468800606694 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9D02424FB468800606694 /* HTTPMethod.swift */; };
 		7AA9D02724FB46A400606694 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9D02624FB46A400606694 /* ApiClient.swift */; };
 		7AA9D02924FB496500606694 /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9D02824FB496500606694 /* HttpHeader.swift */; };
+		7AA9D02B24FB4E4100606694 /* MapBoxApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9D02A24FB4E4100606694 /* MapBoxApi.swift */; };
+		7AA9D02E24FB549900606694 /* GeocodingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9D02D24FB549900606694 /* GeocodingResponse.swift */; };
+		7AA9D03224FB54DA00606694 /* GeocodingResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9D03124FB54DA00606694 /* GeocodingResponseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		7AA9D02424FB468800606694 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		7AA9D02624FB46A400606694 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		7AA9D02824FB496500606694 /* HttpHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeader.swift; sourceTree = "<group>"; };
+		7AA9D02A24FB4E4100606694 /* MapBoxApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxApi.swift; sourceTree = "<group>"; };
+		7AA9D02D24FB549900606694 /* GeocodingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingResponse.swift; sourceTree = "<group>"; };
+		7AA9D03124FB54DA00606694 /* GeocodingResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingResponseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,7 @@
 		7AA9D00624FA38E700606694 /* MapBoxSampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				7AA9D02F24FB54C200606694 /* API */,
 				7AA9D00724FA38E700606694 /* MapBoxSampleTests.swift */,
 				7AA9D00924FA38E700606694 /* Info.plist */,
 			);
@@ -140,13 +147,39 @@
 		7AA9D01F24FB464300606694 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				7AA9D02C24FB549100606694 /* MapBox */,
 				7AA9D02024FB465100606694 /* APIRequestProtocol.swift */,
 				7AA9D02224FB466B00606694 /* APIError.swift */,
 				7AA9D02424FB468800606694 /* HTTPMethod.swift */,
 				7AA9D02624FB46A400606694 /* ApiClient.swift */,
 				7AA9D02824FB496500606694 /* HttpHeader.swift */,
+				7AA9D02A24FB4E4100606694 /* MapBoxApi.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		7AA9D02C24FB549100606694 /* MapBox */ = {
+			isa = PBXGroup;
+			children = (
+				7AA9D02D24FB549900606694 /* GeocodingResponse.swift */,
+			);
+			path = MapBox;
+			sourceTree = "<group>";
+		};
+		7AA9D02F24FB54C200606694 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7AA9D03024FB54C800606694 /* MapBox */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7AA9D03024FB54C800606694 /* MapBox */ = {
+			isa = PBXGroup;
+			children = (
+				7AA9D03124FB54DA00606694 /* GeocodingResponseTests.swift */,
+			);
+			path = MapBox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +317,9 @@
 				7AA9D02124FB465100606694 /* APIRequestProtocol.swift in Sources */,
 				7AA9D02924FB496500606694 /* HttpHeader.swift in Sources */,
 				7AA9CFF524FA38E500606694 /* HomeView.swift in Sources */,
+				7AA9D02E24FB549900606694 /* GeocodingResponse.swift in Sources */,
 				7AA9D02324FB466B00606694 /* APIError.swift in Sources */,
+				7AA9D02B24FB4E4100606694 /* MapBoxApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA9D03224FB54DA00606694 /* GeocodingResponseTests.swift in Sources */,
 				7AA9D00824FA38E700606694 /* MapBoxSampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
