@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  MapBoxSample
 //
 //  Created by ha1f on 2020/08/29.
@@ -18,7 +18,7 @@ private extension MGLPointAnnotation {
 }
 
 /// annotationと中心座標が近すぎると何故か触ったときにクラッシュするので、適当に離してある
-struct ContentView: View {
+struct HomeView: View {
     @State var annotations: [MGLPointAnnotation] = [
         MGLPointAnnotation(title: "Mazzone", coordinate: .init(latitude: 33.594115, longitude: 130.418308))
     ]
@@ -34,8 +34,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }

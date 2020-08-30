@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7AA9CFF124FA38E500606694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9CFF024FA38E500606694 /* AppDelegate.swift */; };
 		7AA9CFF324FA38E500606694 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9CFF224FA38E500606694 /* SceneDelegate.swift */; };
-		7AA9CFF524FA38E500606694 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9CFF424FA38E500606694 /* ContentView.swift */; };
+		7AA9CFF524FA38E500606694 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9CFF424FA38E500606694 /* HomeView.swift */; };
 		7AA9CFF724FA38E600606694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA9CFF624FA38E600606694 /* Assets.xcassets */; };
 		7AA9CFFA24FA38E600606694 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA9CFF924FA38E600606694 /* Preview Assets.xcassets */; };
 		7AA9CFFD24FA38E600606694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA9CFFB24FA38E600606694 /* LaunchScreen.storyboard */; };
@@ -33,7 +33,7 @@
 		7AA9CFED24FA38E500606694 /* MapBoxSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapBoxSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA9CFF024FA38E500606694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AA9CFF224FA38E500606694 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7AA9CFF424FA38E500606694 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7AA9CFF424FA38E500606694 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7AA9CFF624FA38E600606694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AA9CFF924FA38E600606694 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7AA9CFFC24FA38E600606694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 			children = (
 				7AA9CFF024FA38E500606694 /* AppDelegate.swift */,
 				7AA9CFF224FA38E500606694 /* SceneDelegate.swift */,
-				7AA9CFF424FA38E500606694 /* ContentView.swift */,
+				7AA9CFF424FA38E500606694 /* HomeView.swift */,
 				7AA9D01B24FA46D400606694 /* MapView.swift */,
 				7AA9CFF624FA38E600606694 /* Assets.xcassets */,
 				7AA9CFFB24FA38E600606694 /* LaunchScreen.storyboard */,
@@ -256,7 +256,7 @@
 				7AA9CFF124FA38E500606694 /* AppDelegate.swift in Sources */,
 				7AA9D01C24FA46D400606694 /* MapView.swift in Sources */,
 				7AA9CFF324FA38E500606694 /* SceneDelegate.swift in Sources */,
-				7AA9CFF524FA38E500606694 /* ContentView.swift in Sources */,
+				7AA9CFF524FA38E500606694 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
